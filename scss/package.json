@@ -17,12 +17,8 @@
   },
   "scripts": {
     "lint": "stylelint ./**/*.scss",
-    "lint:fix": "yarn lint --fix"
-  },
-  "husky":{
-    "hooks": {
-      "pre-commit": "lint-staged"
-    }
+    "lint:fix": "yarn lint --fix",
+    "prepare": "husky"
   },
   "lint-staged": {
     "*.scss": "yarn lint:fix"
