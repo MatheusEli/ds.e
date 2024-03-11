@@ -8,7 +8,8 @@
   "private": true,
   "workspaces": {
     "packages": [
-      "packages/*"
+      "packages/*",
+      "playgrounds/*"
     ],
     "nohoist": [
       "**/normalize-scss"
@@ -19,6 +20,7 @@
     "lerna": "^8.1.2"
   },
   "scripts": {
-    "build": "yarn lerna run build"
+    "build": "yarn lerna run build",
+    "dev": "yarn lerna run dev"
   }
 }
